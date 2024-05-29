@@ -752,14 +752,29 @@ footer.copyright a{
 
 .to-top{
   position: fixed;
+  bottom: 15px;
+  right:30px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.to-top img{
+  width: 50px;
+  height: 50px;
+}
+
+.to-top-2{
+  position: fixed;
   bottom: 13px;
   right:30px;
   width: 30px;
   height: 30px;
   transition: all 0.3s ease;
+  display: none;
 }
 
-.to-top img{
+.to-top-2 img{
   width: 40px;
   height: 40px;
 }
@@ -839,6 +854,12 @@ footer.copyright a{
     display: block;
   }
   header.topbar, nav{
+    display: none;
+  }
+  .to-top-2{
+    display: block;
+  }
+  .to-top{
     display: none;
   }
   .container{
@@ -975,21 +996,21 @@ footer.copyright a{
   }
 }
 
-@media (max-width: 424px){
-  .container{max-width: 390px;}
+@media (max-width: 450px){
+  .container{max-width: 375px;}
 
   header.hero{
     margin-top: -1.5rem;
   }
   header.hero .hero-image{
-    right: -20px;
+    right: -50px;
     top: 200px;
   }
   section.top-products .flower-slider .flower-card button{
-    width: 45%;
+    width: 50%;
   }
   section.about-ps-flower h2{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   section.about-ps-flower p{
     margin-bottom: 2rem;
@@ -1000,7 +1021,7 @@ footer.copyright a{
   .latest-news .btn-wrapper{
     margin-top: -1rem;
   }
-  .to-top{
+  .to-top-2{
     right: 12px;
   }
 }
